@@ -10,7 +10,6 @@ body {
 .main_container {
   max-width: 1440px;
   min-height: 728px;
-
   display: flex;
   gap: 32px;
   background-color: #fff9e5;
