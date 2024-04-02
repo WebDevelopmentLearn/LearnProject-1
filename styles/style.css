@@ -138,8 +138,8 @@ h1 {
   }
 
   .icon {
-    max-width: 24px;
-    max-height: 24px;
+    width: 24px;
+    height: 24px;
   }
 
   .text_container {
