@@ -76,8 +76,8 @@ button {
 .get_updates_btn {
   background-color: #323232;
   color: white;
-  max-width: 220px;
-  max-height: 65px;
+  width: 220px;
+  height: 65px;
   font-size: 20px;
   font-weight: 800;
   border: none;
