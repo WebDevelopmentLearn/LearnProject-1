@@ -105,13 +105,13 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1272px;
+  /* max-width: 1272px; */
+  max-width: 68%;
   padding: 48px 80px;
   border-radius: 16px;
 
   position: absolute;
-
-  bottom: -1;
+  gap: 2vw;
   /* flex-wrap: wrap; */
 }
 
@@ -125,6 +125,16 @@ button {
   border: none;
 }
 
+.circle {
+  max-width: 25%;
+  max-height: 25%;
+}
+@media screen and (max-width: 1440px) {
+  .purple_container > div {
+    max-width: 95vw;
+    flex-wrap: wrap;
+  }
+}
 /* ================ END OF SECTION 2 ==================== */
 
 /* ================ START OF SECTION 3 ==================== */
