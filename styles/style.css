@@ -6,6 +6,9 @@
   font-family: "Inter", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
 /* ================ START OF SECTION 1 ==================== */
 .nav {
   background-color: #323232;
