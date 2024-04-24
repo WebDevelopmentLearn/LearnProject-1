@@ -111,6 +111,17 @@
   bottom: -1;
   /* flex-wrap: wrap; */
 }
+
+.special_btn {
+  background-color: #323232;
+  color: white;
+  width: 262px;
+  height: 82px;
+  font-size: 22px;
+  font-weight: 800;
+  border: none;
+}
+
 /* ================ END OF SECTION 2 ==================== */
 
 /* ================ START OF SECTION 3 ==================== */
