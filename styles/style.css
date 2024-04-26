@@ -267,8 +267,8 @@ html {
 }
 
 .ticket_part_right {
-  height: 220px;
-  width: 300px;
+  /* height: 220px;
+  width: 300px; */
   background-color: #cccccc;
   display: flex;
   justify-content: center;
@@ -290,10 +290,13 @@ html {
 }
 
 .ticket_part_right h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 4.8rem;
   color: #ffffff;
   word-break: break-all;
-  text-align: center;
+  text-align: start;
   padding-right: 15px;
 }
 
