@@ -267,6 +267,8 @@ html {
 }
 
 .ticket_part_right {
+  height: 220px;
+  width: 300px;
   background-color: #cccccc;
   display: flex;
   justify-content: center;
@@ -307,7 +309,7 @@ html {
 }
 
 .ticket_price {
-  border-right: 1px solid black;
+  border-right: 1px solid #eaeaea;
   height: 150px;
   width: 270px;
 }
