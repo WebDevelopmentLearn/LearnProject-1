@@ -9,7 +9,11 @@
 button {
   cursor: pointer;
 }
-/* ================ START OF SECTION 1 ==================== */
+
+html {
+  font-size: 10px;
+}
+/* ================ START OF NAV ==================== */
 .nav {
   background-color: #323232;
   color: white;
@@ -32,24 +36,29 @@ button {
   font-size: 14px;
 }
 
-@media screen and (max-width: 768px) {
-  .nav {
-    display: none;
-  }
-}
+/* ================ END OF NAV ==================== */
 
-/* ================ END OF SECTION 1 ==================== */
-
-/* ================ START OF SECTION 2 ==================== */
+/* ================ START OF MAIN PAGE ==================== */
 
 .main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   background-image: url("../assets/images/section1_bg.svg");
-  display: flex;
-  flex-direction: column;
-  align-items: start;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 15% 20%;
+  position: relative;
+}
+
+.get_updates > div {
+  order: 2;
+}
+
+.circle {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .main > h1 {
@@ -58,6 +67,7 @@ button {
   color: #212529;
   font-weight: 900;
   margin-bottom: 48px;
+  grid-column: span 2;
 }
 
 .get_updates {
@@ -84,10 +94,6 @@ button {
   margin-top: 31px;
 }
 
-.main {
-  position: relative;
-}
-
 .purple_container {
   display: flex;
   justify-content: center;
@@ -105,7 +111,8 @@ button {
   justify-content: center;
   align-items: center;
   max-width: 68%;
-  padding: 48px 80px;
+  /* 48px 80px; */
+  padding: 48px;
   border-radius: 16px;
   position: absolute;
   gap: 2vw;
@@ -122,29 +129,13 @@ button {
 }
 
 .circle {
-  max-width: 25%;
-  max-height: 25%;
-}
-@media screen and (max-width: 1440px) {
-  .purple_container > div {
-    max-width: 95vw;
-    flex-wrap: wrap;
-  }
+  max-width: 250px;
+  max-height: 250px;
 }
 
-@media screen and (max-width: 768px) {
-  .main > h1 {
-    font-size: 34px;
-    /* max-width: 1110px; */
-  }
+/* ================ END OF MAIN PAGE ==================== */
 
-  .purple_container > div > p {
-    font-size: 30px;
-  }
-}
-/* ================ END OF SECTION 2 ==================== */
-
-/* ================ START OF SECTION 3 ==================== */
+/* ================ START OF SPEAKERS PAGE ==================== */
 
 .speakers_page {
   background-color: #f5f5f5;
@@ -159,7 +150,10 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  /* padding: 16px; */
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 170px;
   gap: 52px;
 }
 
@@ -220,4 +214,121 @@ button {
 .orange_text {
   color: #ff3c00;
 }
-/* ================ END OF SECTION 3 ==================== */
+
+/* ================ END OF SPEAKERS PAGE ==================== */
+
+/* ================ START OF TICKETS PAGE ==================== */
+.tickets_page {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbdb3c;
+  padding: 160px 16% 184px 16%;
+}
+
+.join_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tickets_text_and_logo > h1 {
+  font-size: 5rem;
+}
+
+.tickets_list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.ticket_container {
+  background-color: #ffffff;
+  display: flex;
+}
+
+.ticket_part_left {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  width: 60%;
+  height: 220px;
+  position: relative;
+}
+
+.ticket_price > p {
+  font-size: 5.6rem;
+}
+
+.ticket_info_details,
+.ticket_info_sale {
+  font-size: 2.5rem;
+  color: #212529;
+}
+
+.ticket_info_date {
+  font-size: 1.8rem;
+  color: #8f73f0;
+}
+
+/* ================ END OF TICKETS PAGE ==================== */
+
+/* ================ START OF ADAPTIVE 1440px ==================== */
+
+@media screen and (max-width: 1440px) {
+  .purple_container > div {
+    max-width: 95vw;
+    flex-wrap: wrap;
+  }
+}
+
+/* ================ END OF ADAPTIVE 1440px ==================== */
+
+/* ================ START OF ADAPTIVE 768px ==================== */
+
+@media screen and (max-width: 768px) {
+  .main > h1 {
+    font-size: 34px;
+    /* max-width: 1110px; */
+  }
+
+  .purple_container > div > p {
+    font-size: 30px;
+  }
+
+  .circle_container {
+    order: -1;
+    width: 120px;
+    height: 120px;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .special_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 29px 71px;
+  }
+
+  .speakers_list {
+    padding: 0;
+    padding-bottom: 100px;
+  }
+
+  .speakers_page > div > h1 {
+    font-size: 35px;
+  }
+
+  .tickets_header > img {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+/* ================ END OF ADAPTIVE 768px ==================== */
