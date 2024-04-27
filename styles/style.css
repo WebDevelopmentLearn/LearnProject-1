@@ -267,7 +267,7 @@ html {
 
 .ticket_part_left::before {
   content: "";
-  background-image: url("/assets/images/tickets_page/tickets_part.svg");
+  background-image: url("../assets/images/tickets_page/tickets_part.svg");
   background-color: #fbdb3c;
   height: 100%;
   width: 10px;
@@ -289,7 +289,7 @@ html {
 
 .ticket_part_right::after {
   content: "";
-  background-image: url("/assets/images/tickets_page/ticket_right.svg");
+  background-image: url("../assets/images/tickets_page/ticket_right.svg");
   background-color: #fbdb3c;
   height: 100%;
   width: 15px;
