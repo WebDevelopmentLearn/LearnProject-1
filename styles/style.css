@@ -56,7 +56,7 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, max-content);
-  background-image: url("../assets/images/section1_bg.svg");
+  background-image: url("../assets/images/section1_bg1.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 15% 20%;
@@ -267,7 +267,7 @@ html {
 
 .ticket_part_left::before {
   content: "";
-  background-image: url("../assets/images/tickets_page/tickets_part.svg");
+  background-image: url("../assets/images/tickets_page/ticket_left.svg");
   background-color: #fbdb3c;
   height: 100%;
   width: 10px;
@@ -299,7 +299,6 @@ html {
 
 .ticket_price > p {
   font-size: 5.6rem;
-  font-weight: 600;
   /* padding-right: 15px; */
   padding: 45px 75px 45px 60px;
 }
@@ -372,10 +371,10 @@ html {
   }
 
   .ticket_price > p {
-    font-size: 3.2rem;
+    font-size: 4rem;
   }
   .ticket_part_right > h3 {
-    font-size: 3.2rem;
+    font-size: 4rem;
   }
 }
 
@@ -433,34 +432,78 @@ html {
     font-size: 3.5rem;
   }
 
-  .tickets_header > img {
+  .join_container > img {
     display: none;
   }
 
+  .ticket_container {
+    flex-direction: column;
+    align-self: center;
+    width: 343px;
+  }
   .ticket_part_left {
+    width: 100%;
+    flex-direction: column;
+    padding: 28px;
+    height: fit-content;
+  }
+
+  .ticket_part_right {
+    height: 102px;
+    width: 100%;
+  }
+
+  .ticket_info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
-    padding: 16px;
-    gap: 16px;
-    width: 342px;
-    height: 420px;
-    position: absolute;
+    justify-content: center;
   }
-  /* .ticket_part_left::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotateZ(90deg);
-  } */
 
+  .ticket_info_date {
+    margin-top: 22px;
+  }
+  .ticket_price {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .ticket_price > p {
+    padding: 0;
+  }
+  .ticket_price::before {
+    top: 172px;
+    left: 28px;
+  }
+  .ticket_price::after {
+    top: 172px;
+    left: 310px;
+  }
+
+  .ticket_part_right > h3 {
+    word-break: initial;
+    padding: 0;
+    max-width: 45%;
+    font-size: 3rem;
+  }
   .ticket_part_left::before {
-    height: 10px;
-    width: 100%; /* Ширина будет равна ширине контейнера */
-    top: 0;
-    left: 0;
-    transform: rotateZ(90deg);
+    background-image: url("../assets/images/tickets_page/ticket_top.svg");
+    height: 15px;
+    width: 100%;
+  }
+
+  .ticket_info_details,
+  .ticket_info_sale {
+    font-size: 2.1rem;
+  }
+
+  .ticket_part_right::after {
+    content: "";
+    background-image: url("../assets/images/tickets_page/ticket_bottom.svg");
+    background-color: #fbdb3c;
+    height: 7px;
+    width: 100%;
+    bottom: -1px;
   }
 }
 
