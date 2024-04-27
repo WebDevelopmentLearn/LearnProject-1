@@ -55,7 +55,7 @@ html {
 .main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, max-content);
   background-image: url("../assets/images/section1_bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -255,14 +255,6 @@ html {
 }
 
 .ticket_part_left {
-  /* background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  width: 76%;
-  height: 220px;
-  position: relative; */
-
   display: flex;
   align-items: center;
   background-color: #ffffff;
@@ -378,6 +370,13 @@ html {
   .join_container > img {
     display: none;
   }
+
+  .ticket_price > p {
+    font-size: 3.2rem;
+  }
+  .ticket_part_right > h3 {
+    font-size: 3.2rem;
+  }
 }
 
 /* ================ END OF ADAPTIVE 1440px ==================== */
@@ -449,8 +448,16 @@ html {
     height: 420px;
     position: absolute;
   }
-  .ticket_part_left::before {
+  /* .ticket_part_left::before {
     position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateZ(90deg);
+  } */
+
+  .ticket_part_left::before {
+    height: 10px;
+    width: 100%; /* Ширина будет равна ширине контейнера */
     top: 0;
     left: 0;
     transform: rotateZ(90deg);
