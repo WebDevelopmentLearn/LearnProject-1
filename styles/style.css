@@ -13,6 +13,18 @@ button {
 html {
   font-size: 10px;
 }
+
+.text_700 {
+  font-weight: 700;
+}
+
+.text_800 {
+  font-weight: 800;
+}
+
+.text_900 {
+  font-weight: 900;
+}
 /* ================ START OF NAV ==================== */
 .nav {
   background-color: #323232;
@@ -29,11 +41,11 @@ html {
   outline: none;
   color: white;
   padding: 20px 40px;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .nav > p {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 /* ================ END OF NAV ==================== */
@@ -62,10 +74,9 @@ html {
 }
 
 .main > h1 {
-  font-size: 77px;
+  font-size: 7.7rem;
   max-width: 1110px;
   color: #212529;
-  font-weight: 900;
   margin-bottom: 48px;
   grid-column: span 2;
 }
@@ -78,7 +89,7 @@ html {
 }
 
 .get_updates > div > p {
-  font-size: 20px;
+  font-size: 2rem;
   margin-bottom: 26px;
   max-width: 815px;
 }
@@ -88,8 +99,8 @@ html {
   color: white;
   width: 220px;
   height: 65px;
-  font-size: 20px;
-  font-weight: 800;
+  font-size: 2rem;
+
   border: none;
   margin-top: 31px;
 }
@@ -104,8 +115,7 @@ html {
   background-image: url("../assets/images/section1_purple.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  font-size: 47px;
-  font-weight: 900;
+  font-size: 4.7rem;
   color: white;
   display: flex;
   justify-content: center;
@@ -123,8 +133,8 @@ html {
   color: white;
   width: 262px;
   height: 82px;
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 2.2rem;
+
   border: none;
 }
 
@@ -184,8 +194,7 @@ html {
 .speakers_page > div > h1 {
   margin-top: 250px;
   margin-bottom: 88px; /* 168px 238px*/
-  font-size: 58px;
-  font-weight: 800;
+  font-size: 5.8rem;
 }
 
 .speaker2 {
@@ -196,18 +205,16 @@ html {
 }
 
 .speakers_list h2 {
-  font-size: 31px;
-  font-weight: 900;
+  font-size: 3.1rem;
 }
 
 .speakers_list p {
-  font-size: 21px;
+  font-size: 2.1rem;
   font-weight: 500;
 }
 
 .speakers_list a {
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 1.4rem;
   color: black;
 }
 
@@ -233,7 +240,6 @@ html {
 
 .tickets_text_and_logo > h1 {
   font-size: 5rem;
-  font-weight: 900;
 }
 
 .tickets_list {
@@ -342,12 +348,12 @@ html {
 .ticket_info_details,
 .ticket_info_sale {
   font-size: 2.5rem;
-  color: #212529;
+  color: #a6a8a9;
 }
 
 .ticket_info_date {
   font-size: 1.8rem;
-  color: #8f73f0;
+  color: #d2c7f9;
 }
 
 /* ================ END OF TICKETS PAGE ==================== */
@@ -367,12 +373,12 @@ html {
 
 @media screen and (max-width: 768px) {
   .main > h1 {
-    font-size: 34px;
+    font-size: 3.4rem;
     /* max-width: 1110px; */
   }
 
   .purple_container > div > p {
-    font-size: 30px;
+    font-size: 3rem;
   }
 
   .circle_container {
@@ -399,7 +405,7 @@ html {
   }
 
   .speakers_page > div > h1 {
-    font-size: 35px;
+    font-size: 3.5rem;
   }
 
   .tickets_header > img {
