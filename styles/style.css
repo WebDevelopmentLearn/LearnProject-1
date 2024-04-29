@@ -550,7 +550,7 @@ html {
   .reasons_grid h2 {
     font-size: 3.8rem;
     position: absolute;
-    bottom: 20%;
+    bottom: 30%;
   }
 
   .reasons_grid p {
@@ -643,6 +643,7 @@ html {
   .reasons_grid {
     display: flex;
     flex-direction: column;
+    gap: 30px;
     /* align-items: center; */
   }
   /* .reasons_grid img {
@@ -652,14 +653,36 @@ html {
 
   .reasons_grid h2 {
     font-size: 3.2rem;
-    position: absolute;
-    bottom: 40%;
+    bottom: 20%;
   }
 
   .reasons_grid p {
     line-height: 30px;
-    position: absolute;
-    bottom: 0;
+  }
+
+  .reason_block {
+    max-width: 100%;
+    height: 370px;
+  }
+
+  #reason_image_block_one {
+    order: 1;
+  }
+
+  #reason_two_block {
+    order: 2;
+  }
+
+  #reason_image_block_two {
+    order: 3;
+  }
+
+  #reason_three_block {
+    order: 4;
+  }
+
+  #reason_image_block_three {
+    order: 5;
   }
 }
 /* ================ END OF ADAPTIVE 1024px ==================== */
@@ -818,16 +841,32 @@ html {
   #community_header_2 {
     font-size: 3.5rem;
   }
+
+  .reasons_grid {
+    gap: 20px;
+  }
+  .reasons_grid h2 {
+    font-size: 3.2rem;
+    bottom: 30%;
+  }
+
+  .reasons_grid p {
+    line-height: 30px;
+  }
 }
 
 /* ================ END OF ADAPTIVE 768px ==================== */
 
 /* ================ START OF ADAPTIVE 768px ==================== */
 
-/* @media screen and (max-width: 375px) {
-  .get_updates_btn {
-    margin-bottom: 35px;
+@media screen and (max-width: 390px) {
+  .reasons_header > h1 {
+    font-size: 1.8rem;
   }
-} */
+  .reasons_grid h2 {
+    font-size: 3rem;
+    bottom: 50%;
+  }
+}
 
 /* ================ END OF ADAPTIVE 768px ==================== */
