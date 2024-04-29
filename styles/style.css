@@ -930,7 +930,7 @@ html {
   }
 
   .cookies_text > h1::after {
-    content: "on hotjar.com";
+    content: " on hotjar.com";
   }
 
   .cookies_other {
