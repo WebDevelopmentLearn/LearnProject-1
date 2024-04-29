@@ -503,6 +503,59 @@ html {
 
 /* ================ END OF REASONS PAGE ==================== */
 
+/* ================ START OF TIPS PAGE ==================== */
+
+.tips_page {
+  color: #ffffff;
+  background-color: #323232;
+}
+
+.tips_page > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin: 10%; */
+  padding: 10%;
+}
+
+.tips_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+}
+
+.tips_list > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 20%;
+  text-align: center;
+}
+.tips_list > div > p {
+  margin-top: 10px;
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+
+.tips_list > div > h2 {
+  margin-top: 10px;
+  font-size: 2.5rem;
+}
+
+.tips_page h1 {
+  font-size: 5.8rem;
+  max-width: 30vw;
+  text-align: center;
+  word-break: break-word;
+
+  margin-bottom: 5%;
+}
+
+/* ================ END OF TIPS PAGE ==================== */
+
 /* ================ START OF COOKIES PAGE ==================== */
 
 .coockie_page {
@@ -753,6 +806,20 @@ html {
   #reason_image_block_three {
     order: 5;
   }
+
+  .tips_list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tips_list > div {
+    max-width: 40%;
+  }
+
+  .tips_page h1 {
+    max-width: 45vw;
+  }
 }
 /* ================ END OF ADAPTIVE 1024px ==================== */
 
@@ -923,10 +990,20 @@ html {
     line-height: 30px;
   }
 
+  .tips_list > div {
+    max-width: 60%;
+    gap: 20px;
+  }
+
+  .tips_page h1 {
+    font-size: 3.5rem;
+    max-width: 100vw;
+  }
+
   .cookies_container {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
   }
 
   .cookies_text > h1::after {
