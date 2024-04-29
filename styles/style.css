@@ -419,6 +419,75 @@ html {
 
 /* ================ END OF COMMUNITY PAGE ==================== */
 
+/* ================ START OF REASONS PAGE ==================== */
+
+.reasons_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+}
+
+.reasons_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.reasons_header > h1 {
+  word-break: break-all;
+  font-size: 3.1rem;
+  margin: 20px;
+}
+
+.reasons_grid {
+  display: grid;
+  gap: 160px 40px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin: 10%;
+}
+
+.reasons_grid img {
+  max-width: 100%;
+}
+
+.reason_block {
+  max-width: 100%;
+  background-position-x: right;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#reason_one_block {
+  background-image: url("../assets/images/reasons_page/number_one.svg");
+}
+
+#reason_two_block {
+  background-image: url("../assets/images/reasons_page/number_two.svg");
+}
+
+#reason_three_block {
+  background-image: url("../assets/images/reasons_page/number_three.svg");
+}
+
+.reasons_grid h2 {
+  font-size: 4.8rem;
+  position: absolute;
+  bottom: 20%;
+}
+
+.reasons_grid p {
+  font-size: 1.8rem;
+  line-height: 30px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* ================ END OF REASONS PAGE ==================== */
+
 /* ================ START OF ADAPTIVE 1440px ==================== */
 
 @media screen and (max-width: 1440px) {
@@ -476,6 +545,18 @@ html {
 
   .ticket_part_right > h3 {
     font-size: 4rem;
+  }
+
+  .reasons_grid h2 {
+    font-size: 3.8rem;
+    position: absolute;
+    bottom: 20%;
+  }
+
+  .reasons_grid p {
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -557,6 +638,28 @@ html {
   #community_header_1,
   #community_header_2 {
     max-width: 100%;
+  }
+
+  .reasons_grid {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  /* .reasons_grid img {
+    max-width: 450px;
+    height: 350px;
+  } */
+
+  .reasons_grid h2 {
+    font-size: 3.2rem;
+    position: absolute;
+    bottom: 40%;
+  }
+
+  .reasons_grid p {
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
   }
 }
 /* ================ END OF ADAPTIVE 1024px ==================== */
