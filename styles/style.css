@@ -14,8 +14,16 @@ html {
   font-size: 10px;
 }
 
+.text_400 {
+  font-weight: 400;
+}
+
 .text_500 {
   font-weight: 500;
+}
+
+.text_600 {
+  font-weight: 600;
 }
 
 .text_700 {
@@ -28,6 +36,13 @@ html {
 
 .text_900 {
   font-weight: 900;
+}
+
+/*
+  Использую модификатор !important, так как не могу селектору не хватает силы
+*/
+.hidden {
+  display: none !important;
 }
 /* ================ START OF NAV ==================== */
 .nav {
@@ -488,6 +503,60 @@ html {
 
 /* ================ END OF REASONS PAGE ==================== */
 
+/* ================ START OF COOKIES PAGE ==================== */
+
+.coockie_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cookies_container {
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  padding: 20px 10px 32px 32px;
+  display: flex;
+  gap: 15%;
+  justify-content: space-around;
+}
+
+.cookies_text {
+  display: flex;
+  flex-direction: column;
+}
+.cookies_text > h1 {
+  font-size: 1.8rem;
+}
+
+.cookies_text p {
+  font-size: 1.2rem;
+}
+
+.cookies_other {
+  display: flex;
+  gap: 17px;
+
+  justify-content: center;
+  align-items: center;
+}
+.cookies_btn {
+  width: 125px;
+  height: 42px;
+  color: #ffffff;
+  background-color: #324fbe;
+  padding: auto;
+  border: none;
+}
+
+.cookies_other > a {
+  color: #324fbe;
+}
+
+/* ================ END OF COOKIES PAGE ==================== */
+
 /* ================ START OF ADAPTIVE 1440px ==================== */
 
 @media screen and (max-width: 1440px) {
@@ -852,6 +921,24 @@ html {
 
   .reasons_grid p {
     line-height: 30px;
+  }
+
+  .cookies_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .cookies_text > h1::after {
+    content: "on hotjar.com";
+  }
+
+  .cookies_other {
+    flex-direction: column;
+  }
+
+  .cookies_btn {
+    width: 90vw;
   }
 }
 
