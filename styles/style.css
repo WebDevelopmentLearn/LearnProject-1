@@ -75,7 +75,7 @@ html {
   display: grid;
   /* grid-template-columns: repeat(2, max-content); */
 
-  background-image: url("../assets/images/section1_bg1.svg");
+  background-image: url("../assets/images/main_page/main_page_bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   /* padding: 15% 20%; */
@@ -142,7 +142,7 @@ html {
 }
 
 .purple_container > div {
-  background-image: url("../assets/images/section1_purple.svg");
+  background-image: url("../assets/images/main_page/purple_get_bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 4.7rem;
