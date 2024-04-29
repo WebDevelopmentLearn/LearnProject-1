@@ -54,13 +54,17 @@ html {
 
 .main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, max-content);
+  /* grid-template-columns: repeat(2, max-content); */
+
   background-image: url("../assets/images/section1_bg1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 15% 20%;
+  /* padding: 15% 20%; */
   position: relative;
+
+  grid-template-columns: 2.2fr 1fr;
+  gap: 20px;
+  padding: 12% 18%;
 }
 
 .get_updates > div {
@@ -78,17 +82,19 @@ html {
   max-width: 1110px;
   color: #212529;
   margin-bottom: 48px;
-  grid-column: span 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .get_updates {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 40px;
+  margin-top: 60px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
-.get_updates > div > p {
+.get_updates > p {
   font-size: 2rem;
   margin-bottom: 26px;
   max-width: 815px;
@@ -103,6 +109,15 @@ html {
 
   border: none;
   margin-top: 31px;
+  margin-bottom: 20px;
+}
+
+.circle_container {
+  width: 100%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .purple_container {
@@ -118,7 +133,7 @@ html {
   font-size: 4.7rem;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   max-width: 76%;
   /* 48px 80px; */
@@ -126,6 +141,8 @@ html {
   border-radius: 16px;
   position: absolute;
   gap: 2vw;
+  width: 64%;
+  min-height: 196px;
 }
 
 .special_btn {
@@ -354,9 +371,36 @@ html {
 /* ================ START OF ADAPTIVE 1440px ==================== */
 
 @media screen and (max-width: 1440px) {
-  .purple_container > div {
-    max-width: 95vw;
-    flex-wrap: wrap;
+  .main {
+    padding-bottom: 17%;
+  }
+
+  .main > h1 {
+    font-size: 5.5rem;
+  }
+
+  .circle {
+    align-self: center;
+  }
+
+  .get_updates > p {
+    margin-top: 40px;
+  }
+
+  .purple_container {
+    position: relative;
+    top: -100px;
+    min-height: 200px;
+    padding: 20px 60px;
+  }
+
+  .purple_container > div > h1 {
+    font-size: 3.4rem;
+  }
+  .purple_container > div > button {
+    min-width: 180px;
+    height: 68px;
+    font-size: 18px;
   }
 
   .join_container > img {
@@ -389,6 +433,23 @@ html {
 /* ================ START OF ADAPTIVE 1024px ==================== */
 
 @media screen and (max-width: 1024px) {
+  .main {
+    padding-bottom: 20%;
+  }
+
+  .purple_container > div {
+    padding: 27px 40px;
+  }
+  .purple_container > div > h1 {
+    font-size: 2.5rem;
+  }
+  .purple_container > div > button {
+    font-size: 2.5rem;
+    min-width: 180px;
+    height: 68px;
+    font-size: 18px;
+  }
+
   .speakers_list {
     display: flex;
     flex-direction: column;
@@ -445,9 +506,20 @@ html {
     display: none;
   }
 
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20%;
+  }
+
   .main > h1 {
     font-size: 3.4rem;
     /* max-width: 1110px; */
+  }
+
+  .get_updates,
+  .get_updates > p {
+    margin-top: 0;
   }
 
   .purple_container > div > p {
@@ -456,20 +528,31 @@ html {
 
   .circle_container {
     order: -1;
-    width: 120px;
-    height: 120px;
+    grid-column-start: initial;
+    grid-column-end: initial;
+    grid-row-start: initial;
+    grid-row-end: initial;
   }
 
-  .circle {
-    width: 120px;
-    height: 120px;
-  }
-
-  .special_btn {
+  .purple_container > div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 29px 71px;
+    padding: 17px 20px;
+  }
+  .purple_container > div > h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .purple_container > div > button {
+    text-align: center;
+
+    word-break: break-all;
+    font-size: 2rem;
+    max-width: 140px;
+    height: 68px;
+    font-size: 18px;
   }
 
   .speakers_list {
@@ -566,5 +649,15 @@ html {
     bottom: -1px;
   }
 }
+
+/* ================ END OF ADAPTIVE 768px ==================== */
+
+/* ================ START OF ADAPTIVE 768px ==================== */
+
+/* @media screen and (max-width: 375px) {
+  .get_updates_btn {
+    margin-bottom: 20px;
+  }
+} */
 
 /* ================ END OF ADAPTIVE 768px ==================== */
