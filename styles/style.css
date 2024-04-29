@@ -14,6 +14,10 @@ html {
   font-size: 10px;
 }
 
+.text_500 {
+  font-weight: 500;
+}
+
 .text_700 {
   font-weight: 700;
 }
@@ -173,7 +177,7 @@ html {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
   grid-template-rows: 800px 800px;
-  padding: 4% 14%;
+  padding: 4% 10%;
 }
 
 .speaker {
@@ -364,6 +368,57 @@ html {
 
 /* ================ END OF TICKETS PAGE ==================== */
 
+/* ================ START OF COMMUNITY PAGE ==================== */
+
+.community_page {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+
+  background-color: #323232;
+  color: #ffffff;
+}
+.community_grid {
+  max-width: 1400px;
+  display: grid;
+  gap: 40px 80px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin: 14%;
+  /* grid-template-columns: max-content, max-content; */
+}
+
+.community_grid h1 {
+  font-size: 5.8rem;
+  margin-bottom: 37px;
+}
+
+.community_grid p {
+  margin-bottom: 26px;
+  font-size: 1.8rem;
+  line-height: 30px;
+  max-width: 91%;
+}
+
+.community_image {
+  width: 100%;
+}
+
+#community_header_1 {
+  max-width: 60%;
+}
+
+#community_header_2 {
+  margin-top: 15%;
+}
+
+#first_community_block {
+  align-self: center;
+}
+
+/* ================ END OF COMMUNITY PAGE ==================== */
+
 /* ================ START OF ADAPTIVE 1440px ==================== */
 
 @media screen and (max-width: 1440px) {
@@ -491,6 +546,17 @@ html {
   }
   .ticket_price::after {
     left: 160px;
+  }
+
+  .community_grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #community_header_1,
+  #community_header_2 {
+    max-width: 100%;
   }
 }
 /* ================ END OF ADAPTIVE 1024px ==================== */
@@ -643,6 +709,11 @@ html {
     height: 7px;
     width: 100%;
     bottom: -1px;
+  }
+
+  #community_header_1,
+  #community_header_2 {
+    font-size: 3.5rem;
   }
 }
 
