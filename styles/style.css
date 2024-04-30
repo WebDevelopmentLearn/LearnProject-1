@@ -793,6 +793,24 @@ html {
 
 /* ================ END OF PARTNERSHIP PAGE ==================== */
 
+/* ================ START OF FAQ PAGE ==================== */
+
+.faq_page {
+  background-color: #eaeaea;
+}
+
+.faq_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+.faq_container > h1 {
+  font-size: 5rem;
+}
+/* ================ END OF FAQ PAGE ==================== */
+
 /* ================ START OF COOKIES PAGE ==================== */
 
 .coockie_page {
