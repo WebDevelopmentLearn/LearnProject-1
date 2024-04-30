@@ -706,7 +706,7 @@ html {
 
 .video_container > div > iframe {
   width: 100%;
-  height: 720px;
+  height: 40vw;
 }
 
 .video_container > div {
@@ -750,6 +750,31 @@ html {
   height: 52px;
 }
 /* ================ END OF VIDEO PAGE ==================== */
+
+/* ================ START OF PARTNERSHIP PAGE ==================== */
+.partnership_page {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main_partnership {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.partnership_container > h1 {
+  font-size: 5.8rem;
+}
+
+.other_partnership {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* ================ END OF PARTNERSHIP PAGE ==================== */
 
 /* ================ START OF COOKIES PAGE ==================== */
 
