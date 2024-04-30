@@ -1052,6 +1052,10 @@ html {
   .subscribe_container {
     margin-top: 10%;
   }
+
+  .video_info {
+    gap: 2vw;
+  }
 }
 /* ================ END OF ADAPTIVE 1024px ==================== */
 
@@ -1268,6 +1272,23 @@ html {
     width: 80vw;
   }
 
+  .video_text > h1 {
+    font-size: 2rem;
+  }
+
+  .video_text > p,
+  .video_adress > p {
+    font-size: 1.5rem;
+  }
+
+  .video_adress {
+    width: 260px;
+    height: 260px;
+  }
+  .video_adress > button {
+    width: 100px;
+  }
+
   .cookies_container {
     flex-direction: column;
     align-items: center;
@@ -1299,6 +1320,17 @@ html {
   .reasons_grid h2 {
     font-size: 3rem;
     bottom: 50%;
+  }
+
+  .video_info {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  .video_text {
+    max-width: 100%;
   }
 }
 
