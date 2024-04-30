@@ -690,6 +690,67 @@ html {
 }
 /* ================ END OF SUBSCRIBE PAGE ==================== */
 
+/* ================ START OF VIDEO PAGE ==================== */
+.video_page {
+  background-color: #323232;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.video_container {
+  padding: 10%;
+}
+
+.video_container > div > iframe {
+  width: 100%;
+  height: 720px;
+}
+
+.video_container > div {
+  margin-bottom: 5%;
+}
+.video_info {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.video_text {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.video_text > h1 {
+  font-size: 2.5rem;
+}
+.video_text > p {
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+
+.video_adress {
+  width: 370px;
+  height: 335px;
+  background-color: #262626;
+  border-radius: 20px;
+  padding: 50px;
+  /* padding: 55px 145px 140px 50px; */
+}
+.video_adress > p {
+  font-size: 1.8rem;
+}
+
+.video_adress > button {
+  margin-top: 37px;
+  width: 143px;
+  height: 52px;
+}
+/* ================ END OF VIDEO PAGE ==================== */
+
 /* ================ START OF COOKIES PAGE ==================== */
 
 .coockie_page {
