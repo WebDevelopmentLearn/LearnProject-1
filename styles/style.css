@@ -825,11 +825,11 @@ html {
 }
 
 .faq_question_btn {
-  width: 70vw;
+  width: 90vw;
   border-radius: 20px;
   background-color: #ffffff66;
 
-  padding: 5% 4%;
+  padding: 5rem 4rem;
   border: none;
   outline: none;
   transition: 0.4s;
