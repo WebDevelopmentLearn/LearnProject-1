@@ -797,6 +797,11 @@ html {
 
 .faq_page {
   background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
 }
 
 .faq_container {
@@ -809,7 +814,96 @@ html {
 .faq_container > h1 {
   font-size: 5rem;
 }
+
+.faq_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 60vw;
+  gap: 10px;
+}
+
+.faq_question_btn {
+  width: 70vw;
+  border-radius: 20px;
+  background-color: #ffffff66;
+
+  padding: 5% 4%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.faq_question_btn > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq_question_text {
+  font-size: 1.8rem;
+  line-height: 30px;
+  margin-top: 28px;
+  text-align: start;
+}
+
+.faq_question_btn:hover {
+  background-color: #ccc;
+}
+
+.faq_list h2 {
+  font-size: 2.7rem;
+  text-align: start;
+}
+
+.hidden_answer.hidden {
+  display: none;
+}
+
+.arrow_up {
+  transform: rotateZ(180deg);
+}
+
 /* ================ END OF FAQ PAGE ==================== */
+
+/* ================ START OF FOOTER PAGE ==================== */
+.footer_page {
+  background-color: #323232;
+  color: #ffffff;
+}
+
+.footer_page > div {
+  padding: 2% 5%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer > img {
+  /* width: 408px;
+  height: 96px; */
+
+  width: 21.25vw;
+  height: 5.1vh;
+}
+.footer > button {
+  color: #323232;
+  width: 27.4vw;
+  height: 3.5vh;
+}
+.footer_text {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  font-size: 1.5rem;
+}
+.footer_text a {
+  color: #ffffff;
+}
+/* ================ END OF FOOTER PAGE ==================== */
 
 /* ================ START OF COOKIES PAGE ==================== */
 
@@ -1383,6 +1477,49 @@ html {
 }
 
 /* ================ END OF ADAPTIVE 768px ==================== */
+
+/* ================ START OF ADAPTIVE 425px ==================== */
+@media screen and (max-width: 425px) {
+  .faq_container h1 {
+    font-size: 3rem;
+  }
+  .faq_question_btn {
+    padding: 10%;
+  }
+  .faq_question_btn h2 {
+    font-size: 1.8rem;
+  }
+
+  .faq_question_text p {
+    font-size: 1.5rem;
+  }
+
+  .footer_page > div {
+    padding: 5%;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 4%;
+  }
+
+  .footer > img {
+    width: 85vw;
+    height: 4.2vh;
+  }
+
+  .footer > button {
+    width: 68vw;
+    height: 3.4vh;
+  }
+
+  .footer_text {
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+/* ================ END OF ADAPTIVE 425px ==================== */
 
 /* ================ START OF ADAPTIVE 390px ==================== */
 
