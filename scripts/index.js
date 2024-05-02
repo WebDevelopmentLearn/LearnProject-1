@@ -41,37 +41,13 @@ const faqList = document.querySelector(".faq_list");
 const acc = document.querySelectorAll(".faq_question_btn");
 acc.forEach((el) => {
   el.addEventListener("click", () => {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-
-    el.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
+    el.children[1].classList.toggle("hidden_answer");
+    el.children[1].classList.toggle("hidden");
     let panel = el.children[1];
-    console.log(panel);
     if (panel.classList.contains("hidden_answer")) {
-      panel.classList.toggle("hidden_answer");
-      panel.classList.toggle("hidden");
       el.children[0].children[1].classList.toggle("arrow_up");
     } else {
-      panel.classList.toggle("hidden_answer");
-      panel.classList.toggle("hidden");
       el.children[0].children[1].classList.toggle("arrow_up");
     }
   });
 });
-
-// arrow.forEach((el) => {
-//   el.addEventListener("click", () => {
-//     faqList.forEach((el, id) => {
-//       switch (id) {
-//         case 0:
-//           console.log(el);
-//           return;
-//         case 1:
-//           console.log(el);
-//           return;
-//       }
-//     });
-//   });
-// });
