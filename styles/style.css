@@ -39,10 +39,10 @@ html {
 }
 
 /*
-  Использую модификатор !important, так как не могу селектору не хватает силы
+  Использую модификатор !important, так как данному селектору не хватает силы
 */
-.hidden {
-  display: none !important;
+.hidden.hidden_coockie {
+  display: none;
 }
 /* ================ START OF NAV ==================== */
 .nav {
@@ -73,12 +73,9 @@ html {
 
 .main {
   display: grid;
-  /* grid-template-columns: repeat(2, max-content); */
-
   background-image: url("../assets/images/main_page/main_page_bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* padding: 15% 20%; */
   position: relative;
 
   grid-template-columns: 2.2fr 1fr;
@@ -107,10 +104,6 @@ html {
 
 .get_updates {
   margin-top: 60px;
-  /* grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3; */
 }
 
 .get_updates > p {
@@ -126,7 +119,6 @@ html {
   width: 220px;
   height: 65px;
   font-size: 2rem;
-
   border: none;
   margin-top: 31px;
   margin-bottom: 20px;
@@ -146,13 +138,11 @@ html {
   background-image: url("../assets/images/main_page/purple_get_bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 76%;
-  /* 48px 80px; */
   padding: 48px;
   border-radius: 16px;
   position: absolute;
@@ -171,13 +161,12 @@ html {
   width: 262px;
   height: 82px;
   font-size: 2.2rem;
-
   border: none;
 }
 
 .circle {
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 70vw;
+  /* max-height: 250px; */
 }
 
 /* ================ END OF MAIN PAGE ==================== */
@@ -219,7 +208,7 @@ html {
 }
 
 .speakers_list img {
-  max-width: 380px;
+  max-width: 95vw;
   max-height: 440px;
 }
 .speakers_page > div > h1 {
@@ -990,10 +979,11 @@ html {
     padding: 20px 60px;
   }
 
-  .purple_container > div > h1 {
+  #purple_text > h1 {
     font-size: 3.4rem;
   }
-  .purple_container > div > button {
+
+  #purple_text > button {
     min-width: 180px;
     height: 68px;
     font-size: 18px;
@@ -1072,13 +1062,15 @@ html {
     padding-bottom: 20%;
   }
 
-  .purple_container > div {
+  #purple_text {
     padding: 27px 40px;
   }
-  .purple_container > div > h1 {
+
+  #purple_text > h1 {
     font-size: 2.5rem;
   }
-  .purple_container > div > button {
+
+  #purple_text > button {
     font-size: 2.5rem;
     min-width: 180px;
     height: 68px;
@@ -1249,7 +1241,7 @@ html {
     margin-bottom: 35px;
   }
 
-  .purple_container > div > p {
+  #purple_text > p {
     font-size: 3rem;
   }
 
@@ -1257,18 +1249,20 @@ html {
     order: -1;
   }
 
-  .purple_container > div {
+  #purple_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 17px 20px;
   }
-  .purple_container > div > h1 {
+
+  #purple_text > h1 {
     font-size: 2rem;
     text-align: center;
   }
-  .purple_container > div > button {
+
+  #purple_text > button {
     text-align: center;
 
     word-break: break-all;
@@ -1295,7 +1289,7 @@ html {
   }
 
   .tickets_text_and_logo > img {
-    max-width: 342px;
+    max-width: 95vw;
   }
 
   .tickets_text_and_logo > h1 {
@@ -1305,7 +1299,7 @@ html {
   .ticket_container {
     flex-direction: column;
     align-self: center;
-    width: 343px;
+    width: 95vw;
   }
   .ticket_part_left {
     width: 100%;

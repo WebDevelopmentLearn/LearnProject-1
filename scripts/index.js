@@ -1,3 +1,8 @@
+/*
+	Sources: https://github.com/007killer2/WebDevelopmentLearn
+	Website: https://007killer2.github.io/WebDevelopmentLearn/
+*/
+
 const rejectBtn = document.querySelector("#reject_btn");
 const acceptBtn = document.querySelector("#accept_btn");
 const cookiesPage = document.querySelector(".coockie_page");
@@ -7,20 +12,20 @@ const isCookieEnabled = localStorage.getItem("isCookieEnabled") || "false";
 if (isCookieEnabled === "true") {
   console.log(isCookieEnabled);
   let cookiesPageClassList = cookiesPage.classList;
-  cookiesPageClassList.add("hidden");
+  cookiesPageClassList.add("hidden", "hidden_coockie");
 }
 
 if (cookiesPage != null) {
   rejectBtn.addEventListener("click", () => {
     let cookiesPageClassList = cookiesPage.classList;
-    cookiesPageClassList.add("hidden");
+    cookiesPageClassList.add("hidden", "hidden_coockie");
     localStorage.setItem("isCookieEnabled", "true");
     console.log(`Reject All: Hide cookies`);
   });
 
   acceptBtn.addEventListener("click", () => {
     let cookiesPageClassList = cookiesPage.classList;
-    cookiesPageClassList.add("hidden");
+    cookiesPageClassList.add("hidden", "hidden_coockie");
     localStorage.setItem("isCookieEnabled", "true");
     console.log(`Accept: Hide cookies`);
   });
