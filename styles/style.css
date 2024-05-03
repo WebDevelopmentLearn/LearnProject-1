@@ -38,16 +38,17 @@ html {
   font-weight: 900;
 }
 
-/*
-  Использую модификатор !important, так как данному селектору не хватает силы
-*/
+.dark_gray_bg {
+  background-color: #323232;
+}
+
 .hidden.hidden_coockie {
   display: none;
 }
+
 /* ================ START OF NAV ==================== */
 .nav {
-  background-color: #323232;
-  color: white;
+  color: #ffffff;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -58,7 +59,7 @@ html {
   background-color: #ff3c00;
   border: none;
   outline: none;
-  color: white;
+  color: #ffffff;
   padding: 20px 40px;
   font-size: 1.4rem;
 }
@@ -77,7 +78,6 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-
   grid-template-columns: 2.2fr 1fr;
   gap: 20px;
   padding: 12% 18%;
@@ -114,8 +114,7 @@ html {
 }
 
 .get_updates_btn {
-  background-color: #323232;
-  color: white;
+  color: #ffffff;
   width: 220px;
   height: 65px;
   font-size: 2rem;
@@ -138,7 +137,7 @@ html {
   background-image: url("../assets/images/main_page/purple_get_bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -156,8 +155,7 @@ html {
 }
 
 .special_btn {
-  background-color: #323232;
-  color: white;
+  color: #ffffff;
   width: 262px;
   height: 82px;
   font-size: 2.2rem;
@@ -166,7 +164,6 @@ html {
 
 .circle {
   max-width: 70vw;
-  /* max-height: 250px; */
 }
 
 /* ================ END OF MAIN PAGE ==================== */
@@ -194,7 +191,6 @@ html {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  /* border: 1px solid green; */
 }
 
 .speaker_chris,
@@ -232,7 +228,7 @@ html {
 .link_bio {
   margin-top: 40px;
   font-size: 1.4rem;
-  color: black;
+  color: #000000;
 }
 
 .orange_text {
@@ -328,7 +324,6 @@ html {
   align-items: center;
   font-size: 4.8rem;
   color: #ffffff;
-  /* word-break: break-all; */
   text-align: center;
   max-width: 132px;
 }
@@ -382,12 +377,10 @@ html {
 .community_page {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-
-  background-color: #323232;
   color: #ffffff;
 }
+
 .community_grid {
   max-width: 1400px;
   display: grid;
@@ -395,7 +388,6 @@ html {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   margin: 14%;
-  /* grid-template-columns: max-content, max-content; */
 }
 
 .community_grid h1 {
@@ -501,7 +493,6 @@ html {
 
 .tips_page {
   color: #ffffff;
-  background-color: #323232;
 }
 
 .tips_container {
@@ -509,7 +500,6 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin: 10%; */
   padding: 10%;
 }
 
@@ -562,12 +552,10 @@ html {
   justify-content: space-between;
   align-items: center;
   max-width: 76%;
-  /* 48px 80px; */
   padding: 48px;
   border-radius: 16px;
   position: absolute;
   gap: 4vw;
-  /* width: 64%; */
   min-height: 196px;
 }
 
@@ -589,7 +577,6 @@ html {
   width: 262px;
   height: 82px;
   font-size: 2.2rem;
-
   border: none;
 }
 
@@ -678,7 +665,6 @@ html {
   width: 196px;
   height: 65px;
   margin-top: 50px;
-  background-color: #323232;
   color: #ffffff;
   font-size: 1.8rem;
 }
@@ -686,11 +672,9 @@ html {
 
 /* ================ START OF VIDEO PAGE ==================== */
 .video_page {
-  background-color: #323232;
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
 }
 
@@ -706,9 +690,9 @@ html {
 .video_container > div {
   margin-bottom: 5%;
 }
+
 .video_info {
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
 }
 
@@ -718,9 +702,11 @@ html {
   flex-direction: column;
   gap: 50px;
 }
+
 .video_text > h1 {
   font-size: 2.5rem;
 }
+
 .video_text > p {
   font-size: 1.8rem;
   line-height: 30px;
@@ -732,8 +718,8 @@ html {
   background-color: #262626;
   border-radius: 20px;
   padding: 50px;
-  /* padding: 55px 145px 140px 50px; */
 }
+
 .video_adress > p {
   font-size: 1.8rem;
 }
@@ -779,7 +765,6 @@ html {
 
 .other_partnership {
   display: flex;
-
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -805,6 +790,7 @@ html {
   align-items: center;
   padding: 10%;
 }
+
 .faq_container > h1 {
   font-size: 5rem;
 }
@@ -862,7 +848,6 @@ html {
 
 /* ================ START OF FOOTER PAGE ==================== */
 .footer_page {
-  background-color: #323232;
   color: #ffffff;
 }
 
@@ -880,6 +865,7 @@ html {
   width: 408px;
   height: 96px;
 }
+
 .footer > button {
   color: #323232;
   font-size: 1.8rem;
@@ -887,6 +873,7 @@ html {
   width: 280px;
   height: 66px;
 }
+
 .footer_text {
   display: flex;
   justify-content: end;
@@ -894,6 +881,7 @@ html {
   font-size: 1.5rem;
   margin-top: 50px;
 }
+
 .footer_text a {
   color: #ffffff;
 }
@@ -923,6 +911,7 @@ html {
   display: flex;
   flex-direction: column;
 }
+
 .cookies_text > h1 {
   font-size: 1.8rem;
 }
@@ -934,10 +923,10 @@ html {
 .cookies_other {
   display: flex;
   gap: 17px;
-
   justify-content: center;
   align-items: center;
 }
+
 .cookies_btn {
   width: 125px;
   height: 42px;
@@ -1003,6 +992,7 @@ html {
   .speaker_kyle {
     align-self: start;
   }
+
   .speaker_chris,
   .speaker_iona,
   .speaker_more {
@@ -1035,6 +1025,7 @@ html {
   .partner_container > div > h1 {
     font-size: 3.4rem;
   }
+
   .partner_container > div > button {
     min-width: 180px;
     height: 68px;
@@ -1044,13 +1035,10 @@ html {
   .subscribe_container {
     margin-top: 5%;
   }
+
   .subscribe_text > h1 {
     font-size: 3.4rem;
   }
-
-  /* .subscribe_input {
-    width: 400px;
-  } */
 }
 
 /* ================ END OF ADAPTIVE 1440px ==================== */
@@ -1096,6 +1084,7 @@ html {
   .ticket_container {
     max-width: 700px;
   }
+
   .tickets_text_and_logo > img {
     max-width: 500px;
   }
@@ -1120,6 +1109,7 @@ html {
   .ticket_price::before {
     left: 160px;
   }
+
   .ticket_price::after {
     left: 160px;
   }
@@ -1130,21 +1120,24 @@ html {
     align-items: center;
   }
 
+  .community_first_img {
+    order: -1;
+  }
+
   #community_header_1,
   #community_header_2 {
     max-width: 100%;
+  }
+
+  #community_header_2 {
+    margin-top: 0;
   }
 
   .reasons_grid {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    /* align-items: center; */
   }
-  /* .reasons_grid img {
-    max-width: 450px;
-    height: 350px;
-  } */
 
   .reasons_grid h2 {
     font-size: 3.2rem;
@@ -1197,7 +1190,6 @@ html {
 
   .partner_container {
     position: relative;
-    /* top: 0; */
   }
 
   .subscribe_container {
@@ -1229,7 +1221,6 @@ html {
 
   .main > h1 {
     font-size: 3.4rem;
-    /* max-width: 1110px; */
   }
 
   .get_updates,
@@ -1284,6 +1275,7 @@ html {
   .join_container {
     justify-content: center;
   }
+
   .join_container > img {
     display: none;
   }
@@ -1301,6 +1293,7 @@ html {
     align-self: center;
     width: 95vw;
   }
+
   .ticket_part_left {
     width: 100%;
     flex-direction: column;
@@ -1328,13 +1321,16 @@ html {
     border-right: none;
     border-bottom: 1px solid #eaeaea;
   }
+
   .ticket_price > p {
     padding: 0;
   }
+
   .ticket_price::before {
     top: 172px;
     left: 28px;
   }
+
   .ticket_price::after {
     top: 172px;
     left: 310px;
@@ -1346,6 +1342,7 @@ html {
     max-width: 45%;
     font-size: 3rem;
   }
+
   .ticket_part_left::before {
     background-image: url("../assets/images/tickets_page/ticket_top.svg");
     height: 15px;
@@ -1374,6 +1371,7 @@ html {
   .reasons_grid {
     gap: 20px;
   }
+
   .reasons_grid h2 {
     font-size: 3.2rem;
     bottom: 45%;
@@ -1405,6 +1403,7 @@ html {
     max-width: 100vw;
     text-align: center;
   }
+
   .partner_text > h2 {
     font-size: 2.2rem;
   }
@@ -1417,6 +1416,7 @@ html {
     justify-content: center;
     text-align: center;
   }
+
   .subscribe_img {
     display: none;
   }
@@ -1456,9 +1456,6 @@ html {
   }
 
   .footer > img {
-    /* width: 408px;
-    height: 96px; */
-
     width: 300px;
     height: 100%;
   }
@@ -1490,9 +1487,11 @@ html {
   .faq_container h1 {
     font-size: 3rem;
   }
+
   .faq_question_btn {
     padding: 10%;
   }
+
   .faq_question_btn h2 {
     font-size: 1.8rem;
   }
@@ -1504,6 +1503,7 @@ html {
   .footer_page > div {
     padding: 5%;
   }
+
   .footer {
     flex-direction: column;
     gap: 48px;
@@ -1517,8 +1517,6 @@ html {
   .footer > button {
     width: 68vw;
     height: 64px;
-
-    /* color: #323232; */
   }
 
   .footer_text {
@@ -1536,6 +1534,7 @@ html {
   .reasons_header > h1 {
     font-size: 1.8rem;
   }
+
   .reasons_grid h2 {
     font-size: 3rem;
     bottom: 50%;
