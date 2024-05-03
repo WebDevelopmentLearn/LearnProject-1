@@ -1,16 +1,27 @@
 const rejectBtn = document.querySelector("#reject_btn");
 const acceptBtn = document.querySelector("#accept_btn");
 const cookiesPage = document.querySelector(".coockie_page");
+
+const isCookieEnabled = localStorage.getItem("isCookieEnabled") || "false";
+
+if (isCookieEnabled === "true") {
+  console.log(isCookieEnabled);
+  let cookiesPageClassList = cookiesPage.classList;
+  cookiesPageClassList.add("hidden");
+}
+
 if (cookiesPage != null) {
   rejectBtn.addEventListener("click", () => {
     let cookiesPageClassList = cookiesPage.classList;
     cookiesPageClassList.add("hidden");
+    localStorage.setItem("isCookieEnabled", "true");
     console.log(`Reject All: Hide cookies`);
   });
 
   acceptBtn.addEventListener("click", () => {
     let cookiesPageClassList = cookiesPage.classList;
     cookiesPageClassList.add("hidden");
+    localStorage.setItem("isCookieEnabled", "true");
     console.log(`Accept: Hide cookies`);
   });
 }

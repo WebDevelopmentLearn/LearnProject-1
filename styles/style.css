@@ -117,6 +117,7 @@ html {
   font-size: 2rem;
   margin-bottom: 26px;
   max-width: 815px;
+  line-height: 33px;
 }
 
 .get_updates_btn {
@@ -141,11 +142,11 @@ html {
   align-items: center;
 }
 
-.purple_container > div {
+#purple_text {
   background-image: url("../assets/images/main_page/purple_get_bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  font-size: 4.7rem;
+
   color: white;
   display: flex;
   justify-content: space-between;
@@ -158,6 +159,10 @@ html {
   gap: 2vw;
   width: 64%;
   min-height: 196px;
+}
+
+#purple_text > h1 {
+  font-size: 4.7rem;
 }
 
 .special_btn {
@@ -885,9 +890,6 @@ html {
 .footer > img {
   width: 408px;
   height: 96px;
-
-  /* width: 21.25vw;
-  height: 5.1vh; */
 }
 .footer > button {
   color: #323232;
