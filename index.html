@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/media.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,11 +16,11 @@
     <title>LearnProject</title>
   </head>
   <body>
+  <nav class="nav dark_gray_bg">
+    <p class="text_600">November 2nd-3rd 2023 | NEw Center, Berline</p>
+    <button class="text_600">See you in 2024</button>
+  </nav>
     <section class="main_header">
-      <div class="nav dark_gray_bg">
-        <p class="text_600">November 2nd-3rd 2023 | NEw Center, Berline</p>
-        <button class="text_600">See you in 2024</button>
-      </div>
 
       <div class="main">
         <h1 class="text_900">
@@ -386,27 +387,23 @@
         <form action="">
           <div class="subscribe_input_fields">
             <div id="first_name" class="subscribe_input">
-              <label class="text_500" for="">First Name</label>
+              <label class="text_500" for="first_name">First Name</label>
               <input type="text" />
             </div>
             <div id="last_name" class="subscribe_input">
-              <label class="text_500" for="">Last Name</label>
+              <label class="text_500" for="last_name">Last Name</label>
               <input type="text" />
             </div>
             <div id="email" class="subscribe_input">
-              <label class="text_500" for="">Email</label>
+              <label class="text_500" for="email">Email</label>
               <input type="email" />
             </div>
           </div>
 
-          <div class="subscribe_personal_data">
-            <input type="checkbox" />
-            <label class="text_500" for=""
-              >By checking this box, you agree to our End User Terms and Privacy
-              Policy.</label
-            >
+          <div id="accept_policy" class="subscribe_personal_data">
+            <input type="checkbox" value="accept_policy" />
+            <label class="text_500" for="accept_policy">By checking this box, you agree to our End User Terms and Privacy Policy.</label>
           </div>
-          <!-- <input class="sign_up_btn" type="submit" /> -->
           <button class="sign_up_btn text_800 dark_gray_bg" type="submit">
             SIGN ME UP
           </button>
@@ -640,7 +637,7 @@
       </div>
     </section>
 
-    <section class="footer_page dark_gray_bg">
+    <footer class="footer_page dark_gray_bg">
       <div>
         <div class="footer">
           <img
@@ -656,7 +653,7 @@
           <a class="text_500" href="">Code of Conduct</a>
         </div>
       </div>
-    </section>
+    </footer>
     <section class="coockie_page">
       <div class="cookies_container">
         <div class="cookies_text">
