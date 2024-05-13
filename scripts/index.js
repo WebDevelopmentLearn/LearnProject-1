@@ -6,31 +6,8 @@
 const rejectBtn = document.querySelector("#reject_btn");
 const acceptBtn = document.querySelector("#accept_btn");
 const cookiesPage = document.querySelector(".coockie_page");
-
 const isCookieEnabled = localStorage.getItem("isCookieEnabled") || "false";
-
-if (isCookieEnabled === "true") {
-  console.log(isCookieEnabled);
-  let cookiesPageClassList = cookiesPage.classList;
-  cookiesPageClassList.add("hidden", "hidden_coockie");
-}
-
-if (cookiesPage != null) {
-  rejectBtn.addEventListener("click", () => {
-    let cookiesPageClassList = cookiesPage.classList;
-    cookiesPageClassList.add("hidden", "hidden_coockie");
-    localStorage.setItem("isCookieEnabled", "true");
-    console.log(`Reject All: Hide cookies`);
-  });
-
-  acceptBtn.addEventListener("click", () => {
-    let cookiesPageClassList = cookiesPage.classList;
-    cookiesPageClassList.add("hidden", "hidden_coockie");
-    localStorage.setItem("isCookieEnabled", "true");
-    console.log(`Accept: Hide cookies`);
-  });
-}
-
+const acc = document.querySelectorAll(".faq_question_btn");
 const videoFrame = document.querySelector("#video_frame");
 const videosList = [
   "IKXrzTmug_E?si=pSiYkRmy72fKecKM",
@@ -39,22 +16,35 @@ const videosList = [
   "mnOrDCSr2XA?si=65uQY-ll6BGXl1fD",
   "lJyxWQPHotw?si=kQOjx_02DO3A0ufA",
 ];
-
 let currentVideo = Math.floor(videosList.length * Math.random());
-// console.log(
-//   `RandomValue: ${currentVideo}` + `\n` + `Link: ${videosList[currentVideo]}`
-// );
 videoFrame.setAttribute(
   "src",
   `https://www.youtube.com/embed/` + `${videosList[currentVideo]}`
 );
+let cookiesPageClassList = cookiesPage.classList;
 
-// const faqList = document.querySelectorAll(".faq_question");
-const arrow = document.querySelectorAll(".arrow");
-const qestion = document.querySelector(".faq_question");
-const faqList = document.querySelector(".faq_list");
+if (isCookieEnabled === "true") {
+  // cookiesPageClassList.add("hidden", "hidden_coockie");
+  hide();
+}
 
-const acc = document.querySelectorAll(".faq_question_btn");
+if (cookiesPage) {
+  rejectBtn.addEventListener("click", () => {
+    hide();
+    console.log(`Reject All: Hide cookies`);
+  });
+
+  acceptBtn.addEventListener("click", () => {
+    hide();
+    console.log(`Reject All: Hide cookies`);
+  });
+}
+
+function hide() {
+  cookiesPageClassList.add("hidden", "hidden_coockie");
+  localStorage.setItem("isCookieEnabled", "true");
+}
+
 acc.forEach((el) => {
   el.addEventListener("click", () => {
     el.children[1].classList.toggle("hidden_answer");
@@ -67,3 +57,51 @@ acc.forEach((el) => {
     }
   });
 });
+
+const btn = document.querySelectorAll("button");
+
+
+function convertRGBtoHEX(rgb) {
+    const rgbArr = rgb.match(/\d+/g);
+    const hex = rgbArr.reduce((acc, curr) => {
+        return acc + (parseInt(curr).toString(16).length < 2 ? "0" + parseInt(curr).toString(16) : parseInt(curr).toString(16));
+    }, "#");
+    return hex;
+    
+}
+btn.forEach((el, id, arr) => {
+  const defaultBcgColor = el.style.backgroundColor;
+  
+  el.addEventListener("pointerover", (event) => {
+    const btnElement = event.target;
+    const bcgColor = convertRGBtoHEX(getComputedStyle(btnElement).backgroundColor);
+    // console.log(bcgColor);
+    switch (bcgColor) {
+      case "#ff3c00":
+        btnElement.style.backgroundColor = "#ef901a";
+        break;
+      case "#323232":
+        btnElement.style.backgroundColor = "#29b0e3";
+        break;
+      case "#f0f0f0":
+        btnElement.style.backgroundColor = "#91d3d3";
+        break;
+      case "#ffffff0004":
+        btnElement.style.backgroundColor = "#fcfcfc00194";
+        break;
+        case "#ffffff":
+        btnElement.style.backgroundColor = "#8c8c8c";
+        break;
+      case "#324fbe":
+        btnElement.style.backgroundColor = "#323c81";
+        break;
+    }
+    // console.log("Hover");
+  });
+
+  el.addEventListener("pointerout", (event) => {
+    const btnElement = event.target;
+    btnElement.style.backgroundColor = defaultBcgColor;
+    // console.log("Out");
+  });
+})
