@@ -22,6 +22,8 @@ videoFrame.setAttribute(
   `https://www.youtube.com/embed/` + `${videosList[currentVideo]}`
 );
 let cookiesPageClassList = cookiesPage.classList;
+const btn = document.querySelectorAll("button");
+
 
 if (isCookieEnabled === "true") {
   // cookiesPageClassList.add("hidden", "hidden_coockie");
@@ -57,9 +59,6 @@ acc.forEach((el) => {
     }
   });
 });
-
-const btn = document.querySelectorAll("button");
-
 
 function convertRGBtoHEX(rgb) {
     const rgbArr = rgb.match(/\d+/g);
