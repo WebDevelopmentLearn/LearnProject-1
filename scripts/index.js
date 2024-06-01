@@ -1,6 +1,6 @@
 /*
-	Sources: https://github.com/007killer2/WebDevelopmentLearn
-	Website: https://007killer2.github.io/WebDevelopmentLearn/
+	Sources: https://github.com/WebDevelopmentLearn/LearnProject-1
+	Website: https://webdevelopmentlearn.github.io/LearnProject-1/
 */
 
 const rejectBtn = document.querySelector("#reject_btn");
