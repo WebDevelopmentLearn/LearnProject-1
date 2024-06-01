@@ -1,3 +1,6 @@
+@import "variables";
+@import "mixins";
+
 /* ================ START OF ADAPTIVE 1440px ==================== */
 
 @media screen and (max-width: 1440px) {
@@ -122,9 +125,11 @@
   }
 
   .speakers_list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+
+    @include flexBox(normal, center, column);
     gap: 68px;
     max-width: 100vw;
   }
@@ -171,9 +176,10 @@
   }
 
   .community_grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    @include flexBox(normal, center, column);
   }
 
   .community_first_img {
@@ -190,8 +196,9 @@
   }
 
   .reasons_grid {
-    display: flex;
-    flex-direction: column;
+    //display: flex;
+    //flex-direction: column;
+    @include flexBox(normal, normal, column);
     gap: 30px;
   }
 
@@ -230,9 +237,11 @@
   }
 
   .tips_list {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    //flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+
+    @include flexBox(center, center, column);
     margin-bottom: 20%;
   }
 
@@ -270,8 +279,9 @@
   }
 
   .main {
-    display: flex;
-    flex-direction: column;
+    //display: flex;
+    //flex-direction: column;
+    @include flexBox(normal, normal, column);
     padding-bottom: 20%;
   }
 
@@ -297,10 +307,11 @@
   }
 
   #purple_text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+    @include flexBox(center, center, column);
     padding: 17px 20px;
   }
 
@@ -363,10 +374,12 @@
   }
 
   .ticket_info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    //justify-content: center;
+
+    @include flexBox(center, center, column);
   }
 
   .ticket_info_date {
@@ -448,10 +461,11 @@
   }
 
   .partner_container > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
+    @include flexBox(center, center, column);
     padding: 20px;
   }
 
@@ -577,8 +591,10 @@
 
   .footer_text {
     margin-top: 10px;
-    justify-content: center;
-    align-items: center;
+    //justify-content: center;
+    //align-items: center;
+    @include flexBox(center, center);
+
     flex-wrap: wrap;
   }
 }

@@ -42,7 +42,7 @@ html {
 }
 
 .dark_gray_bg {
-  background-color: #323232;
+  background-color: $darkGrayBG;
 }
 
 .hidden.hidden_coockie {
@@ -51,7 +51,7 @@ html {
 
 /* ================ START OF NAV ==================== */
 .nav {
-  color: #ffffff;
+  color: $whiteT;
   //display: flex;
   //justify-content: end;
   //align-items: center;
@@ -61,10 +61,10 @@ html {
 }
 
 .nav > button {
-  background-color: #ff3c00;
+  background-color: $orangeBG;
   border: none;
   outline: none;
-  color: #ffffff;
+  color: $whiteT;
   padding: 20px 40px;
   font-size: 1.4rem;
 }
@@ -119,7 +119,7 @@ html {
 }
 
 .get_updates_btn {
-  color: #ffffff;
+  color: $whiteT;
   width: 220px;
   height: 65px;
   font-size: 2rem;
@@ -144,7 +144,7 @@ html {
   background-image: url("../assets/images/main_page/purple_get_bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #ffffff;
+  color: $whiteT;
   @include flexBox(space-between, center);
   //display: flex;
   //justify-content: space-between;
@@ -163,7 +163,7 @@ html {
 }
 
 .special_btn {
-  color: #ffffff;
+  color: $whiteT;
   width: 262px;
   height: 82px;
   font-size: 2.2rem;
@@ -237,11 +237,11 @@ html {
 .link_bio {
   margin-top: 40px;
   font-size: 1.4rem;
-  color: #000000;
+  color: $blackT;
 }
 
 .orange_text {
-  color: #ff3c00;
+  color: $orangeT;
 }
 
 .text_more {
@@ -255,7 +255,7 @@ html {
   //display: flex;
   //flex-direction: column;
   @include flexBox(normal, normal, column);
-  background-color: #fbdb3c;
+  background-color: $yellowBG;
   padding: 160px 16% 184px 16%;
 }
 
@@ -285,7 +285,7 @@ html {
   //display: flex;
   //align-items: center;
   @include flexBox(normal, center);
-  background-color: #ffffff;
+  background-color: $whiteBG;
   padding: 16px;
   gap: 16px;
   width: 76%;
@@ -296,7 +296,7 @@ html {
 .ticket_part_left::before {
   content: "";
   background-image: url("../assets/images/tickets_page/ticket_left.svg");
-  background-color: #fbdb3c;
+  background-color: $yellowBG;
   height: 100%;
   width: 10px;
   position: absolute;
@@ -305,7 +305,7 @@ html {
 }
 
 .ticket_part_right {
-  background-color: #cccccc;
+  background-color: $mediumGrayBG;
   height: 220px;
   width: 300px;
   position: relative;
@@ -319,7 +319,7 @@ html {
 .ticket_part_right::after {
   content: "";
   background-image: url("../assets/images/tickets_page/ticket_right.svg");
-  background-color: #fbdb3c;
+  background-color: $yellowBG;
   height: 100%;
   width: 15px;
   position: absolute;
@@ -338,7 +338,7 @@ html {
   //align-items: center;
   @include flexBox(center, center);
   font-size: 4.8rem;
-  color: #ffffff;
+  color: $whiteT;
   text-align: center;
   max-width: 132px;
 }
@@ -346,7 +346,7 @@ html {
 .ticket_price::before {
   content: "";
   background-image: url("../assets/images/tickets_page/ticket_divider_circle.svg");
-  background-color: #ffffff;
+  background-color: $whiteBG;
   height: 10px;
   width: 9px;
   position: absolute;
@@ -355,7 +355,7 @@ html {
 }
 
 .ticket_price {
-  border-right: 1px solid #eaeaea;
+  border-right: 1px solid $lightGrayB;
   //display: flex;
   //align-items: center;
   //justify-content: center;
@@ -367,7 +367,7 @@ html {
 .ticket_price::after {
   content: "";
   background-image: url("../assets/images/tickets_page/ticket_divider_circle.svg");
-  background-color: #ffffff;
+  background-color: $whiteBG;
   height: 10px;
   width: 9px;
   position: absolute;
@@ -395,7 +395,7 @@ html {
   //flex-direction: column;
   //align-items: center;
   @include flexBox(normal, center, column);
-  color: #ffffff;
+  color: $whiteT;
 }
 
 .community_grid {
@@ -446,7 +446,7 @@ html {
   //justify-content: center;
 
   @include flexBox(center, center, column);
-  background-color: #eaeaea;
+  background-color: $lightGrayBG;
 }
 
 .reasons_header {
@@ -513,7 +513,7 @@ html {
 /* ================ START OF TIPS PAGE ==================== */
 
 .tips_page {
-  color: #ffffff;
+  color: $whiteT;
 }
 
 .tips_container {
@@ -577,7 +577,7 @@ html {
   background-image: url("../assets/images/tips_page/partner_get_bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #000000;
+  color: $blackT;
   //display: flex;
   //justify-content: space-between;
   //align-items: center;
@@ -605,8 +605,8 @@ html {
 }
 
 .partner_btn {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: $whiteBG;
+  color: $blackT;
   width: 262px;
   height: 82px;
   font-size: 2.2rem;
@@ -617,7 +617,7 @@ html {
 
 /* ================ START OF SUBSCRIBE PAGE ==================== */
 .subscribe_page {
-  background-color: #eaeaea;
+  background-color: $lightGrayBG;
   //display: flex;
   //justify-content: center;
 
@@ -679,7 +679,7 @@ html {
 }
 .subscribe_input > label::after {
   content: " *";
-  color: red;
+  color: #FF0000FF;
 }
 
 .subscribe_personal_data {
@@ -709,14 +709,14 @@ html {
   width: 196px;
   height: 65px;
   margin-top: 50px;
-  color: #ffffff;
+  color: $whiteT;
   font-size: 1.8rem;
 }
 /* ================ END OF SUBSCRIBE PAGE ==================== */
 
 /* ================ START OF VIDEO PAGE ==================== */
 .video_page {
-  color: #ffffff;
+  color: $whiteT;
   //display: flex;
   //flex-direction: column;
   //justify-content: center;
@@ -783,8 +783,8 @@ html {
 
 /* ================ START OF PARTNERSHIP PAGE ==================== */
 .partnership_page {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: $whiteBG;
+  color: $blackT;
 }
 
 .partnership_container {
@@ -805,7 +805,7 @@ html {
 
   @include flexBox(center, center, column);
   width: 60vw;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid $lightGrayB;
 }
 .main_partnership > h1 {
   text-align: center;
@@ -831,7 +831,7 @@ html {
 /* ================ START OF FAQ PAGE ==================== */
 
 .faq_page {
-  background-color: #eaeaea;
+  background-color: $lightGrayBG;
   //display: flex;
   //flex-direction: column;
   //justify-content: center;
@@ -894,7 +894,7 @@ html {
 }
 
 .faq_question_btn:hover {
-  background-color: #ccc;
+  background-color: $mediumGrayBG;
 }
 
 .faq_list h2 {
@@ -914,7 +914,7 @@ html {
 
 /* ================ START OF FOOTER PAGE ==================== */
 .footer_page {
-  color: #ffffff;
+  color: $whiteT;
 }
 
 .footer_page > div {
@@ -935,7 +935,7 @@ html {
 }
 
 .footer > button {
-  color: #323232;
+  color: $darkGrayT;
   font-size: 1.8rem;
 
   width: 280px;
@@ -954,7 +954,7 @@ html {
 }
 
 .footer_text a {
-  color: #ffffff;
+  color: $whiteT;
 }
 /* ================ END OF FOOTER PAGE ==================== */
 
@@ -971,7 +971,7 @@ html {
 }
 
 .cookies_container {
-  background-color: #ffffff;
+  background-color: $whiteBG;
   position: fixed;
   bottom: 0;
   padding: 20px 10px 32px 32px;
@@ -1009,13 +1009,13 @@ html {
 .cookies_btn {
   width: 125px;
   height: 42px;
-  color: #ffffff;
-  background-color: #324fbe;
+  color: $whiteT;
+  background-color: $blueBG;
   border: none;
 }
 
 .cookies_other > a {
-  color: #324fbe;
+  color: $blueT;
 }
 
 
