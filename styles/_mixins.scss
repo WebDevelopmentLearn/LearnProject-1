@@ -7,12 +7,27 @@
 }
 
 
-@mixin posLT($posType: static, $posL: 0px, $posT: 0px) {
+@mixin posTL($posType: static, $posT: 0px, $posL: 0px) {
   position: $posType;
+  top: $posT;
   left: $posL;
+}
+
+@mixin posBL($posType: static, $posB: 0px, $posL: 0px) {
+  position: $posType;
+  bottom: $posB;
+  left: $posL;
+}
+
+@mixin posT($posType: static, $posT: 0px) {
+  position: $posType;
   top: $posT;
 }
 
+@mixin posB($posType: static, $posB: 0px) {
+  position: $posType;
+  bottom: $posB;
+}
 
 
 @mixin posTBLR($posType: static, $posT: 0px, $posB: 0px, $posL: 0px, $posR: 0px) {

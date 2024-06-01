@@ -93,9 +93,11 @@ html {
 }
 
 .circle {
-  position: relative;
-  top: 0;
-  left: 0;
+  //position: relative;
+  //top: 0;
+  //left: 0;
+
+  @include posTL(relative, 0, 0);
 }
 
 .main > h1 {
@@ -299,9 +301,11 @@ html {
   background-color: $yellowBG;
   height: 100%;
   width: 10px;
-  position: absolute;
-  left: 0;
-  top: 0;
+  //position: absolute;
+  //left: 0;
+  //top: 0;
+
+  @include posTL(absolute, 0, 0);
 }
 
 .ticket_part_right {
@@ -349,9 +353,11 @@ html {
   background-color: $whiteBG;
   height: 10px;
   width: 9px;
-  position: absolute;
-  top: 12%;
-  left: 280px;
+  //position: absolute;
+  //top: 12%;
+  //left: 280px;
+
+  @include posTL(absolute, 12%, 280px);
 }
 
 .ticket_price {
@@ -370,9 +376,11 @@ html {
   background-color: $whiteBG;
   height: 10px;
   width: 9px;
-  position: absolute;
-  bottom: 12%;
-  left: 280px;
+  //position: absolute;
+  //bottom: 12%;
+  //left: 280px;
+
+  @include posBL(absolute, 12%, 280px);
 }
 
 .ticket_info_details,
@@ -497,15 +505,18 @@ html {
 
 .reasons_grid h2 {
   font-size: 4.8rem;
-  position: absolute;
-  bottom: 20%;
+  //position: absolute;
+  //bottom: 20%;
+
+  @include posB(absolute, 20%);
 }
 
 .reasons_grid p {
   font-size: 1.8rem;
   line-height: 30px;
-  position: absolute;
-  bottom: 0;
+  //position: absolute;
+  //bottom: 0;
+  @include posB(absolute, 0);
 }
 
 /* ================ END OF REASONS PAGE ==================== */
@@ -972,8 +983,11 @@ html {
 
 .cookies_container {
   background-color: $whiteBG;
-  position: fixed;
-  bottom: 0;
+  //position: fixed;
+  //bottom: 0;
+
+  @include posB(fixed, 0);
+
   padding: 20px 10px 32px 32px;
   //display: flex;
   gap: 15%;

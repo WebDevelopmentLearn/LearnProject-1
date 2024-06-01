@@ -21,8 +21,11 @@
   }
 
   .purple_container {
-    position: relative;
-    top: -100px;
+    //position: relative;
+    //top: -100px;
+
+    @include posT(relative, -100px);
+
     min-height: 200px;
     padding: 20px 60px;
   }
@@ -64,19 +67,26 @@
 
   .reasons_grid h2 {
     font-size: 3.8rem;
-    position: absolute;
-    bottom: 30%;
+    //position: absolute;
+    //bottom: 30%;
+
+    @include posB(absolute, 30%);
   }
 
   .reasons_grid p {
     line-height: 30px;
-    position: absolute;
-    bottom: 0;
+    //position: absolute;
+    //bottom: 0;
+
+    @include posB(absolute, 0);
   }
 
   .partner_container {
-    position: relative;
-    bottom: -100px;
+    //position: relative;
+    //bottom: -100px;
+
+    @include posB(relative, -100px);
+
     min-height: 200px;
     padding: 20px 60px;
   }
