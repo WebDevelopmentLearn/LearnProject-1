@@ -1,0 +1,24 @@
+
+@mixin flexBox($justifyValue: normal, $alignValue: normal, $flexDirection: row) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyValue;
+  align-items: $alignValue;
+}
+
+
+@mixin posLT($posType: static, $posL: 0px, $posT: 0px) {
+  position: $posType;
+  left: $posL;
+  top: $posT;
+}
+
+
+
+@mixin posTBLR($posType: static, $posT: 0px, $posB: 0px, $posL: 0px, $posR: 0px) {
+  position: $posType;
+  top: $posT;
+  bottom: $posB;
+  left: $posL;
+  right: $posR;
+}
